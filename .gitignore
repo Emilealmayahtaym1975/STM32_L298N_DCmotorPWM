@@ -1,0 +1,5 @@
+﻿# STM32CubeIDE / STM32CubeMX generated files
+/Debug/
+/Release/
+/.metadata/
+/*.launch
