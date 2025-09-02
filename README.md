@@ -38,7 +38,7 @@ PWM으로 속도를 조절하고, 정/역회전·브레이크·코스트 기능�
 ---
 
 ## 🔹 Core Code
-`c
+```c
 motor_forward();
 motor_set_duty(20); HAL_Delay(1500);
 motor_set_duty(40); HAL_Delay(1500);
@@ -49,6 +49,6 @@ motor_reverse();
 motor_set_duty(25); HAL_Delay(2000);
 
 motor_brake(); motor_set_duty(0); HAL_Delay(1000);
-`
+```
 
 
